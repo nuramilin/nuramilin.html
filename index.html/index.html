@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Personal Website</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-image: url('purple.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: #613659;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #613659;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #d3b1c2;
+    text-align: center;
+    padding: 8px 12px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #c197d2;
+    color: #fff;
+}
+
+header {
+    margin:20 px 0;
+    padding: 20px;
+    text-align: center;
+    background: #d3b1c2;
+    color: #613659;
+}
+
+main {
+    padding: 20px;
+    background: #d9ced6;
+    margin:20 px;
+    min-height: 400px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #d3b1c2;
+    color: #613659;
+}
+main p {
+    line-height: 1.8; 
+}
+
+img {
+    margin-top: 20px; 
+    border-radius: 10px; 
+}
+</style>
+</head>
+
+<body>
+
+<div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="biodata.html">Biodata</a>
+    <a href="experience.html">Experience</a>
+    <a href="education.html">Education</a>
+    <a href="family.html">Family</a>
+    <a href="gallery.html">Gallery</a>
+</div>
+
+<header>
+<h1 style="font-family:impact;" style="font-size:600%;">⋆˙⟡WELCOME TO MY WEBSITE-`♡´-</h1>
+<h2><b>Hi! My name is Nur Amilin ˚ ༘ 🦕𖦹⋆｡˚</b></h2>
+</header>
+
+<main>
+<h1 style="background-color:#d3b1c2;"><center>&#10024About Me&#10024</center></h1>
+<img src="milinnn.png" alt="Milin" style="float:left;width:290px;height:330px;">
+
+<h2>My name is Nur Amilin Binti Hamidi⋆౨ৎ˚⟡˖ ࣪</h2>
+
+<p style="font-size:150%;">I am in fifth semester student Diploma in Information Management
+from UiTM Sungai Petani. As a fifth semester student in Diploma in Information Management program at UiTM Sungai Petani, I am enthusiastic about prospect of gaining experience on everything that will give me more knowledge regarding this program and give me valuable experience in real life work place.</p>
+
+
+
+<center><img src="flower.gif" alt="flower" style="float:none;width:200px;height:200px;">
+<img src="flower.gif" alt="flower" style="float:none;width:200px;height:200px;">
+<img src="flower.gif" alt="flower" style="float:none;width:200px;height:200px;">
+<img src="flower.gif" alt="flower" style="float:none;width:200px;height:200px;"></center>
+
+<h1 style="background-color:#d3b1c2;"><center>&#10024My Interests & Hobbies&#10024</center></h1>
+
+    <style>
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 20px;
+background-color: #d9ced6;
+text-align: center;
+	}
+
+h1 {
+margin-bottom: 20px;
+	}
+
+.hobbies {
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+gap: 20px;
+        }
+
+.hobby {
+cursor: pointer;
+border-radius: 10px;
+overflow: hidden;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+transition: transform 0.2s;
+        }
+
+.hobby img {
+width: 200px;
+height: 150px;
+object-fit: cover;
+display: block;
+        }
+
+.hobby:hover {
+transform: scale(1.05);
+        }
+
+#details {
+margin-top: 20px;
+padding: 40px;
+background: #d3b1c2;
+border-radius: 10px;
+display: none;
+max-width: 800px;
+margin-left: auto;
+margin-right: auto;
+color: #613659;
+        }
+
+</style>
+</head>
+<body>
+   
+<p style="color: #613659;">Click on a picture to learn more about my hobbies!</p>
+
+<div class="hobbies">
+
+<div class="hobby" onclick="showDetails('music')">
+<img src=music.jpg alt="Music">
+</div>
+
+<div class="hobby" onclick="showDetails('baking')">
+<img src="baking.jpg" alt="Baking">
+</div>
+
+ <div class="hobby" onclick="showDetails('novel')">
+<img src="novel.jpg" alt="Novel">
+</div>
+
+</div>
+<div id="details"></div>
+
+<script>
+function showDetails(hobby) {
+const detailsDiv = document.getElementById('details');
+let content = '';
+
+switch (hobby) {
+case 'music':
+content = `
+<h1><b>&#127925MUSIC&#127925</b></h1>
+<p>Music is my escape. I love listening to different genres, especially ballad and classical!</p>
+
+<style>
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 20px;
+	background-color: #f4f4f4;
+	text-align: center;
+        }
+
+h1 {
+	margin-bottom: 40px;
+        }
+
+.playlist {
+	max-width: 600px;
+	margin: 0 auto;
+	text-align: left;
+        }
+
+.song {
+	background: #e4d4c8;
+	margin-bottom: 15px;
+	padding: 10px;
+	border-radius: 8px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	color: #613659
+        }
+
+.song-info {
+flex-grow: 1;
+        }
+
+audio {
+	width: 100%;
+outline: none;
+        }
+</style>
+</head>
+
+<body>
+    <h2 style="color: #613659;">My Top 3 Music Playlist</h2>
+ 
+
+<div class="playlist">
+
+<div class="song">
+      
+<div class="song-info">
+<h3>Song 1: Masing-masing</h3>
+<p>Artist: Ernie Zakri</p>
+<audio controls>
+<source src="masingmasing.mp3" type="audio/mpeg">
+</audio>
+</div>
+</div>
+
+<div class="song">
+<div class="song-info">
+<h3>Song 2: Still With You</h3>
+<p>Artist: Jungkook, Jeon</p>
+<audio controls>
+<source src="jungkook.mp3" type="audio/mpeg">
+</audio>
+</div>
+</div>
+</div>
+
+</body>
+</html>
+`;
+break;
+
+case 'baking':
+content = `
+<h1>&#127856BAKING&#127856</h1>
+<p>Baking is like a therapy to me. And when I have free time, Iwill try to bake cake or cookies. Learning more recipes are like an exploration to me.</p>
+
+<style>
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px; /* Space between the frames */
+    padding: 10px;
+}
+
+.image-frame {
+    width: 200px; 
+    height: 200px;
+    overflow: hidden; 
+    border: 3px solid #613659;
+    border-radius: 10px; 
+    background-color: #d9ced6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-frame img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    transition: transform 0.3s; 
+}
+
+
+.image-frame img:hover {
+    transform: scale(1.1);
+}
+</style>
+</head>
+
+<body>
+
+<h2><center>Here is things that I've baked before</center></h2>
+<div class="gallery-container">
+<div class="image-frame">
+<img src="cookies.jpg" alt="cookie">
+</div>
+<div class="image-frame">
+<img src="chococake.jpg" alt="chococake">
+</div>
+<div class="image-frame">
+<img src="brownie.jpg" alt="brownie">
+</div>
+</div>
+
+
+`;
+break;
+
+case 'novel':
+content = `
+<h1>&#128218NOVEL&#128218</h1>
+<p>I like to read novel too when I have time. Here I provide links to buy books that I recommended</p>
+
+<style>
+table, th, td {
+  border:1px solid purple;
+  padding: 1px;
+  text-align: left;
+  vertical-align: top; 
+  background: #e4d4c8;
+  color: #613659;"
+}
+
+td ul {
+    margin: 0;
+    padding-left: 20px; 
+}
+
+a {
+  text-decoration: none;
+  color: #613659;
+}
+a:hover {
+  text-decoration: underline;
+  color: #c197d2;
+}
+</style>
+<body>
+
+<h2 style="color: #613659;"><center>My Novel List<center></h2>
+
+<table style="width:100%">
+<tr>
+	<th style="width:30%"><center>Readed</center></th>
+    <th style="width:30%"><center>Recommended</center></th>
+    <th style="width:30%"><center>Favourite</center></th>
+</tr>
+  
+<tr>
+     <td>
+     <li>Dr Alpha Male</li>
+     <li>Dheo's</li>
+     <li>Dia Tetap Sempurna</li>
+     <li>King Haidar</li>
+     <li>Chef's Cuisine</li>
+     <li>Rose's</li>
+     <li>Twin's Territory</li>
+     <li>Obsession</li>
+     <li>ACE</li>
+     </td>
+     
+    <td>
+     <li><a href="https://mphonline.com/products/chefs-cuisine" target="_blank">Chef's Cuisine</li></a>
+     <li><a href="https://mphonline.com/products/twins-territory" target="blank">Twin's Territory</li></a>
+     <li><a href="https://www.smobookstores.com/products/-karya-seni-novel-dheo-s-by-anjell" target="blank">Dheo's</li></a>
+     <li><a href="https://www.goodreads.com/book/show/74953463-rose-s" target="blank">Rose's</li></a>
+      </td>
+      
+    <td>
+     <li>chef's Cuisine</li>
+     <li>Twin's Territory</li>
+      </td>
+      
+</ul>
+</tr>
+</style>
+</table>
+
+
+
+`;
+break;
+
+default:
+content = '';
+	}
+detailsDiv.innerHTML = content;
+detailsDiv.style.display = 'block';
+        }
+</script>
+</main>
+
+
+<footer>
+<img src="instagram.png" alt="insta" class="center" usemap="#workmap" style="width:37px;height:35px;">
+
+<map name="workmap">
+  <area shape="circle" coords="34,44,270,350" alt="instagram" href="https://www.instagram.com/milinouss/profilecard/?igsh=NzhhMGR6dnp6bDh6" target="_blank">
+
+<img src="telegram.png" alt="telegram" class="center" usemap="#workmap" style="width:37px;height:35px;">
+
+<map name="workmap">
+  <area shape="circle" coords="34,44,270,350" alt="telegram" href="https://t.me/meelyn" target="_blank">
+
+
+</map>
+</footer>
+</div>
+
+</body>
+</html>
+
