@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Experience</title>
+<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-image: url('purple.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: #613659;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #613659;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #d3b1c2;
+    text-align: center;
+    padding: px 12px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #c197d2;
+    color: #fff;
+}
+header {
+    margin: 5px auto; 
+    padding: 20px; 
+    text-align: center;
+    background: #d3b1c2;
+    color: #613659;
+    border-radius: 8px;
+    font-size: 18px; 
+    width: 80%; 
+}
+img {
+    width: 60%; 
+    height: auto;
+    border-radius: 10px;
+    margin: 0 auto; 
+    display: block;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+h3 {
+   text-align: center;
+   background-color: LightGray;
+   padding: 10px;
+   margin: 10px 0;
+   color: #613659;
+}
+
+.main-carousel {
+   margin: 20px auto;
+   width: 80%;
+}
+.carousel-cell {
+   width: 60%; 
+   margin-right: 10px;
+   overflow: hidden;
+   border-radius: 10px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.carousel-cell img {
+   display: block;
+   width: 100%;
+   height: auto;
+}
+.video-container {
+   text-align: center;
+   margin: 20px auto;
+        }
+
+video {
+   width: 80%;
+   max-width: 600px;
+   margin-bottom: 20px;
+   border-radius: 8px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+</style>
+</head>
+
+<div class="navbar">
+    <a href="homepage.html">Home</a>
+    <a href="biodata.html">Biodata</a>
+    <a href="experience.html">Experience</a>
+    <a href="education.html">Education</a>
+    <a href="family.html">Family</a>
+    <a href="gallery.html">Gallery</a>
+</div>
+
+<header>
+<h1><b>INTERNSHIP EXPERIENCE</b></h1>
+</header>
+
+<img src="intern.png" alt="intern">
+
+ <body>
+
+<div class="main-carousel" data-flickity='{ "wrapAround": true, "autoPlay": 3000 }'>
+    <div class="carousel-cell"><img src="one.png" alt="one"></div>
+    <div class="carousel-cell"><img src="two.png" alt="two"></div>
+    <div class="carousel-cell"><img src="three.png" alt="three"></div>
+    <div class="carousel-cell"><img src="four.png" alt="four"></div>
+    <div class="carousel-cell"><img src="five.png" alt="five"></div>
+    <div class="carousel-cell"><img src="six.png" alt="six"></div>
+    <div class="carousel-cell"><img src="seven.png" alt="seven"></div>
+    <div class="carousel-cell"><img src="eight.png" alt="eight"></div>
+    <div class="carousel-cell"><img src="nine.png" alt="nine"></div>
+    <div class="carousel-cell"><img src="ten.png" alt="ten"></div>
+    <div class="carousel-cell"><img src="eleven.png" alt="eleven"></div>
+</div>
+
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+<br>
+
+
+<div class="video-container">
+    <video controls>
+    <source src="teaserone.mp4" type="video/mp4">
+    </video>
+    
+    <video controls>
+    <source src="teasertwo.mp4" type="video/mp4">
+    </video>
+</div>
+
+</body>
+</html>
+
